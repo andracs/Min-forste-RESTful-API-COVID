@@ -9,8 +9,8 @@ Se på localhost:3000
 
 Endpoints:
 
-/  - formular til indtastning (sender POST request til /corona)
-/corona - api endpoint, som viser det aktuelle coronatal på en GET request, mens på en POST request vil den oprette nye tal
+- ***/***  - formular til indtastning (sender POST request til /corona)
+- ***/corona*** - api endpoint, som viser det aktuelle coronatal på en GET request, mens på en POST request vil den oprette nye tal
 
 ## Todo
 - Implementer peristens i en fil
