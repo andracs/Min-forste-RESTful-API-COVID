@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  min-forste-api:
+    build: .
+    image: easj/min-forste-api:latest
+    
