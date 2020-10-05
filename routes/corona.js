@@ -18,11 +18,27 @@ router.get('/mul', function(req, res, next) {
 router.post('/', function(req, res, next) {
   svar = "POST request modtaget. Coronatal er oprettet. ";
   svar = "Mul har nu " + req.body.smittedeMul + " smittede.";
-  // Gem i database
-  res.send(svar);
+  // TODO Persister det indkomne d
+  obj = {}
+  obj.svar = svar; 
+  res.send(JSON.stringify(obj));
 });
 
 // TODO make put requests (opdater)
+router.put('/', function(req, res, next) {
+  obj = {}
+  obj.svar = "PUT request modtaget, data er opdateret."; 
+    // TODO Persister det indkomne data
+  res.send(JSON.stringify(obj));
+});
+
 // TODO make delete requests (slet)
+router.delete('/', function(req, res, next) {
+  obj = {}
+  obj.svar = "DELETE request modtaget, data er slettet."; 
+    // TODO Persister det indkomne data
+  res.send(JSON.stringify(obj));
+});
 
 module.exports = router;
+
