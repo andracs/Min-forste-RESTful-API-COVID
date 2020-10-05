@@ -4,8 +4,8 @@ En hurtig dummy, hvor vi byggede en dummy-covid-api for Zealand.
 
 ## Usage
 
-```npm install ```
-Se på localhost:3000
+```docker-compose up```
+Skriv ovenstående kommando i mappen. 
 
 Endpoints:
 
