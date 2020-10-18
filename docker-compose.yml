@@ -3,6 +3,13 @@ version: '2'
 services:
   min-forste-api:
     build: .
-    image: easj/min-forste-api:latest
+    image: zealand-dk/min-forste-api:latest
+    ports:
+      - "8000:3000"
+  
+  db:
+      image: mongo
+      ports:
+        - "8001:27017"
 
 
